@@ -1,0 +1,121 @@
+.navbar{
+  background: #eeeeee;
+  font-family: "Inter Semi Bold";
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navdiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navlogo a{
+  font-size: 35px;
+  font-weight: 600;
+  color: #333333;
+}
+li{
+  display: inline-block;
+}
+li a{
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 25px;
+}
+button{
+  background-color: #eeeeee;
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;
+}
+button a{
+  color: #333333;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#home{
+  padding-top: 50px;
+  padding-bottom: 20px;
+  display: inline-block;
+  align-items: center;
+}
+#home h1{
+  text-align: center;
+}
+#home p{
+  margin: 0 100px;
+  text-align: justify;
+}
+.signUpButton{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.signUpButton button{
+  padding: 11px;
+  width: 150px;
+  border-radius: 10px;
+  margin-right: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #eeeeee;
+  border: 2px solid black;
+}
+
+.aboutDiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#about{
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-right: 50px;
+}
+#about h1{
+  text-align: center;
+}
+#about p{
+  margin: 0 100px;
+  text-align: justify;
+}
+
+
+#testimonies{
+  padding-top: 50px;
+  padding-bottom: 20px;
+  display: flex;
+}
+#testimonies h4{
+  text-align: center;
+}
+#testimonies p{
+  margin: 0 30px;
+  text-align: center;
+  background: #eee;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+
+
+#contact{
+  margin-top: 120px;
+  background-color: #333333;
+  padding: 1px;
+}
+#contact p{
+  color: white;
+}
+
+.infos{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+#contact .footer .info p{
+  font-size: 15px;
+}

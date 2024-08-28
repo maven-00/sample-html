@@ -1,8 +1,11 @@
 .navbar{
-  background: #eeeeee;
-  font-family: "Inter Semi Bold";
+  background: #ddc1c6;
+  font-family: "Helvitica", serif;
   padding-right: 15px;
   padding-left: 15px;
+}
+.highlight{
+  color: #0056b3;
 }
 .navdiv{
   display: flex;
@@ -23,47 +26,94 @@ li a{
   font-weight: bold;
   margin-right: 25px;
 }
-button{
-  background-color: #eeeeee;
+
+.signInButton{
+  background-color: transparent;
   margin-left: 10px;
-  border-radius: 10px;
+  border-radius: 0px;
+  border: 2px solid gray;
   padding: 10px;
   width: 150px;
-}
-button a{
+  /*For the button fonts*/
   color: #333333;
   font-weight: bold;
   font-size: 15px;
 }
-
-#home{
-  padding-top: 50px;
-  padding-bottom: 20px;
-  display: inline-block;
-  align-items: center;
-}
-#home h1{
-  text-align: center;
-}
-#home p{
-  margin: 0 100px;
-  text-align: justify;
-}
 .signUpButton{
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*padding-top: 30px;*/
+  background-color: #906e74;
+  margin-left: 10px;
+  border-radius: 0px;
+  border: 1px solid gray;
+  padding: 10px;
+  width: 150px;
+  /*For the button fonts*/
+  color: #333333;
+  font-weight: bold;
+  font-size: 15px;
+}
+.signUpButton a{
+  color: #333333;
+  font-weight: bold;
+  font-size: 15px;
+}
+.hireMeButton{
+  padding: 11px;
+  width: 200px;
+  border-radius: 0px;
+  margin-right: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #906e74;
+  border: 2px solid gray;
+}
+.hireMeDiv{
   display: flex;
   justify-content: center;
   padding-top: 30px;
 }
-.signUpButton button{
-  padding: 11px;
-  width: 150px;
-  border-radius: 10px;
-  margin-right: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: #eeeeee;
-  border: 2px solid black;
+
+#home{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
+.intro{
+  text-align: left;
+  margin-left: 200px;
+}
+.intro h3{
+  font-size: x-large;
+  font-family: "Arial", serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.intro h1{
+  font-size: 70px;
+  /*font-family: "Corben", cursive;*/
+  font-family: "Arial", serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.intro h2{
+  font-size: xx-large;
+  font-family: "Arial", serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#changing-phrase{
+  color: #704c52;
+  font-family: "Coda", cursive;
+}
+
+#home p{
+  margin: 0 100px;
+  text-align: justify;
+}
+
 
 .aboutDiv{
   display: flex;
@@ -85,7 +135,7 @@ button a{
 .sampling{
   width: 300px;
   height: 330px;
-
+  filter: drop-shadow(0 0 20px #121212);
 }
 
 

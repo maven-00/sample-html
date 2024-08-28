@@ -2,35 +2,36 @@
   <header>
     <nav class="navbar">
       <div class="navdiv" id="navdiv">
-        <div class="navlogo"><a href="#navdiv">Sample</a></div>
+        <div class="navlogo"><a href="#navdiv">Port<span class="highlight">folio.</span></a></div>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#">Careers</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#testimonies">Testimonies</a></li>
 <!--          <button id="signInButton" data-bs-toggle="modal" data-bs-target="#signInModal"><a>Sign In</a></button>-->
-          <button id="signInButton" (click)="openModal()"><a>Sign In</a></button>
-          @if (showModal) {
-            <app-sign-in-modal (close)="closeModal()">
+          <button id="signInButton" class="signInButton"(click)="openModal()"><a>LOG IN</a></button>
+          @if (showModal){
+            <app-sign-in-modal (closeModal)="closeModal()">
             </app-sign-in-modal>
           }
+          <button id="signUpButton" class="signUpButton"><a>SIGN UP</a></button>
         </ul>
       </div>
     </nav>
   </header>
   <div class="main">
     <div class="home" id="home">
-      <h1>This is a sample html.</h1>
-      <p>Once upon a time, in a small, quaint village nestled between towering mountains and lush forests, there lived a young woman named Elara. Elara was known throughout the village for her insatiable curiosity and adventurous spirit.
-        While others were content with their daily routines, Elara always yearned for something more—she wanted to explore the world beyond the familiar confines of her village.
-        One day, while wandering through the village library, Elara stumbled upon an ancient, dusty book tucked away in a forgotten corner. The book was titled "The Lost Lands of Arcadia" and was filled with tales of mythical creatures, hidden treasures, and uncharted territories.
-        As she flipped through the pages, her excitement grew. She knew she had to embark on a journey to discover these lost lands.
-        Elara packed her belongings and set off on her adventure, leaving behind the comfort and safety of her village. Her journey was filled with challenges and wonders.
-        She trekked through dense forests, climbed treacherous mountains, and crossed vast deserts.
-        Along the way, she encountered various creatures, some friendly and others not so much.
-        But Elara's determination never wavered.</p>
-      <div class="signUpButton">
-        <a href="#"><button>Sign Up</button></a>
+      <img class="ginaImage" alt="An image of a beautiful and powerful woman." ngSrc="assets/gina.png" height="500" width="500" priority>
+      <div class="intro">
+        <h3>Hi, my name is</h3>
+        <h1>Gina Espinosa</h1>
+        <h2>And I'm a <span id="changing-phrase">SOFTWARE ENGINEER</span>.</h2>
+        <script [src]="changePhrase()"></script>
+        <div class="hireMeDiv">
+          <button id="hireMeButton" class="hireMeButton"><a>HIRE ME</a></button>
+        </div>
       </div>
     </div>
     <div class="aboutDiv">
@@ -56,6 +57,7 @@
         <img class="sampling" alt="tiger" ngSrc="assets/sample-png-files-4.png" height="400" width="400">
       </div>
     </div>
+    <div class="services" id="services"></div>
     <div class="testimonies" id="testimonies">
       <div>
         <h4>Testimony 1:</h4>
